@@ -1,0 +1,44 @@
+
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "ru.localcontrol",
+    "id": "localcontrol",
+    "version": "1.0.0",
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "metadata": {
+      "name": "Local Control",
+      "description": "Client-side control of local time and weather.",
+      "contributors": {
+        "Ffelka": "Developer"
+      },
+      "license": "MIT"
+    },
+    "entrypoints": {
+      "client": [
+        "ru.localcontrol.LocalControlClient"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "versions": ">=0.30.1"
+      },
+      {
+        "id": "minecraft",
+        "versions": "26.1.2"
+      },
+      {
+        "id": "fabric-api",
+        "versions": "*"
+      }
+    ]
+  },
+  "mixin": {
+    "config": "localcontrol.mixins.json",
+    "environment": "client"
+  },
+  "minecraft": {
+    "environment": "client"
+  }
+}

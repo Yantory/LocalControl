@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "localcontrol",
+  "version": "1.0.0",
+  "name": "Local Control",
+  "description": "Client-side local time, weather, and environment overrides.",
+  "authors": [
+    "Ffelka"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.localcontrol.LocalControlClient"
+    ]
+  },
+  "depends": {
+    "minecraft": "26.1.2",
+    "fabricloader": ">=0.19.0",
+    "fabric-api": "*",
+    "java": ">=25"
+  }
+}
